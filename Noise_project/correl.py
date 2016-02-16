@@ -1,5 +1,4 @@
 import numpy as np
-fnames = ['LiveJounal', 'lfr_0.1', 'dblp']
 net_attr = ['clustering' , 'eff dia' , 'dia' , 'inter/edges ', 'intra/edges' , 'inter/ intra' , 'assort degre' , 'edge connct' , 'avg path len' , 'robust']
 out = open("uniform_lfr03_corr.txt","w")
 f1 = open("lfr03_sensitivity.txt","r")
@@ -61,51 +60,8 @@ print("*************************************************************************
 for v in mes1:
  print v
 
-print("*************************************************************************")
 
-
-
-'''
-
-net2 = []
-mes2 = []
-
-for i in net1:
-	temp = []
-	for k in range(1,len(i)):
-		temp.append(abs(i[k]-i[k-1]))
-	net2.append(temp)
-
-for i in mes1:
-        temp = []
-        for k in range(1,len(i)):
-                temp.append(abs(i[k]-i[k-1]))
-        mes2.append(temp)
-
-
-
-
-
-
-print("******************************************************")
-print("Network Features ")
-for c in net2:
- print c 
- print("\n")
- 
-print("Metrics Features ")
-for c in mes2:
- print c
- print("\n")
-
-print len(net2)
-print len(mes2)
-
-'''
-
-print("***************************************************************************")
-
-print("Start Corelationssssssssssssssssssssss")
+print("Start Corelations Calculation")
 
 
 for i in net1:

@@ -24,8 +24,7 @@ def labelling(g):
 
 def permanence(g1):
         print "Inside RAK"
-	comm = g1.community_infomap()
-	#comm = labelling(g1)
+	comm = labelling(g1) # Use the ground truth
         print "outside RAk"
 	print 'there'
 	total_nodes = 0.0

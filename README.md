@@ -1,2 +1,2 @@
 # Noise_Models
-The Netowrk Files have .graphml
+The Network Files have .graphml extension
